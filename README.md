@@ -1,16 +1,74 @@
-# React + Vite
+# Tic Tac Toe Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive **Tic Tac Toe** game built with **React** and **Vite**.  
+This project allows two players to play turn by turn, detects the winner automatically, and shows the game result in a clean user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Classic 2-player Tic Tac Toe gameplay
+- Turn-based player switching (X and O)
+- Automatic winner detection
+- Draw detection
+- Restart game functionality
+- Clean and responsive UI
+- Toast notification when the game ends
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**
+- **Vite**
+- **JavaScript**
+- **CSS**
+- **React Toastify**
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to run the project locally.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/tic-tac-toe.git
+2. Navigate to the project folder
+cd tic-tac-toe
+3. Install dependencies
+npm install
+4. Start the development server
+npm run dev
+Project Structure
+tic-tac-toe/
+│── public/
+│── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│── package.json
+│── vite.config.js
+│── README.md
+How It Works
+
+The game board contains 9 cells.
+
+Two players take turns placing X and O.
+
+The app checks for winning combinations after every move.
+
+If one player matches a winning pattern, the game ends and the winner is displayed.
+
+If all cells are filled and there is no winner, the game ends in a draw.
+
+The Restart Game button resets the board and starts a new match.
+
+Future Improvements
+
+Highlight winning cells
+
+Add score tracking
+
+Add player vs computer mode
+
+Add sound effects
+
+Improve UI with animations
+
+Add dark/light mode
